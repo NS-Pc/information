@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Loading-->
+    <div id="loading"><h1>Welcome</h1></div>
+    <!--Header-->
+    <header>
+    <div id="home">Home</div>
+    <div id="about">About</div>
+    <div id="contact">Contact</div>
+    </header>
+    <!--Home-->
+    <div id="Home">
+        <div id="welcome">
+            <h1>Welcome</h1>
+            <p>Hi, My name is M.noman..</p>
+        </div>
+    </div>
+    <!--About-->
+    <div id="About">
+        <div id="top" class="box"><p>Name</p><samp>M.Noman Hussan</samp></div>
+        <div class="box"><p>Age</p><samp>18</samp></div>
+        <div class="box"><p>Matric</p><samp>Computer</samp></div>
+        <div id="skill" class="box"><p>Skill</p><samp>Website front development</samp><img src="imag2.png" alt=""></div>
+        <div class="box"><p>Github</p><samp><a href="https://github.com/NS-Pc">github/NS-Pc</a></samp></div>
+    </div>
+    <!--Contact-->
+    <div id="Contact">
+        <a href="mailto:noman011pc@gmail.com">📧Gmail</a><br><br><br>
+        <a href="https://github.com/NS-Pc">🐈‍⬛Github</a>
+    </div>
+
+    <!--JavaScript-->
+    <script>
+        setTimeout(()=>{document.getElementById("loading").style.display="none"},4000);
+        let Home=document.getElementById("Home");
+        let About=document.getElementById("About");
+        let Contact=document.getElementById("Contact");
+        document.getElementById("home").addEventListener("click",()=>{
+            Home.style.display="inline-block";
+            About.style.display="none";
+            Contact.style.display="none";
+        });
+        document.getElementById("about").addEventListener("click",()=>{
+            Home.style.display="none";
+            About.style.display="inline-block";
+            Contact.style.display="none";
+        });
+        document.getElementById("contact").addEventListener("click",()=>{
+            Home.style.display="none";
+            About.style.display="none";
+            Contact.style.display="inline-block";
+        });
+    </script>
+
+</body>
+</html>
